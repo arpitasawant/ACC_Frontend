@@ -20,10 +20,10 @@ function Signup() {
 
   return (
     <div className="auth-form-container">
-      <h2>Sign Up</h2>
+      <h2 className="title">Sign Up</h2>
       <form onSubmit={handleSubmit}>
         <div>
-          <label>Email</label>
+          <label className="title">Email</label>
           <input
             type="email"
             value={email}
@@ -32,7 +32,7 @@ function Signup() {
           />
         </div>
         <div>
-          <label>Password</label>
+          <label className="title">Password</label>
           <input
             type="password"
             value={password}
@@ -41,7 +41,7 @@ function Signup() {
           />
         </div>
         <div>
-          <label>Confirm Password</label>
+          <label className="title">Confirm Password</label>
           <input
             type="password"
             value={confirmPassword}
@@ -51,8 +51,8 @@ function Signup() {
         </div>
         <button type="submit">Sign Up</button>
       </form>
-      <p>
-        Already have an account? <Link to="/login">Login here</Link>
+      <p className="title">
+        Already have an account? <Link className="title" to="/login">Login here</Link>
       </p>
     </div>
   );

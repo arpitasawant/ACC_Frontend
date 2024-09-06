@@ -13,10 +13,10 @@ function Login() {
 
   return (
     <div className="auth-form-container">
-      <h2>Login</h2>
+      <h2 className='title'>Login</h2>
       <form onSubmit={handleSubmit}>
         <div>
-          <label>Email</label>
+          <label className='title'>Email</label>
           <input
             type="email"
             value={email}
@@ -25,7 +25,7 @@ function Login() {
           />
         </div>
         <div>
-          <label>Password</label>
+          <label className='title'>Password</label>
           <input
             type="password"
             value={password}
@@ -35,8 +35,8 @@ function Login() {
         </div>
         <button type="submit">Login</button>
       </form>
-      <p>
-        Don't have an account? <Link to="/signup">Sign up here</Link>
+      <p className='title'>
+        Don't have an account? <Link className="title" to="/signup">Sign up here</Link>
       </p>
     </div>
   );

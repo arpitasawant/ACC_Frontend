@@ -1,11 +1,11 @@
-
+// src/components/Header.js
 import React from 'react';
 import { Link } from 'react-router-dom';
-
+import logo from '../assets/logo.jpg';
 function Header() {
   return (
     <nav className="navbar">
-      <h1 className="logo">ACC</h1>
+      <img src={logo} alt="Logo" className="logo" /> 
       <ul>
         <li>
           <Link to="/login">Login</Link>
